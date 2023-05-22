@@ -1,0 +1,6 @@
+@import 'global-styles.scss';
+
+h1 {
+  color: map-get($colors, red-100);
+  font-family: map-get($fonts, primary);
+}
