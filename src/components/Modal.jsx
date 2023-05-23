@@ -1,15 +1,8 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { fetchCards } from '../redux/features/cardSlice';
+import { useSelector } from 'react-redux';
 import '../styles/App.scss';
 
 function Card() {
   const { card } = useSelector((store) => store.card);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCards());
-  }, [dispatch]);
 
   return (
     <div>
@@ -39,7 +32,7 @@ function Card() {
             {' '}
             {item.score}
           </p>
-          <button type="button" className="button">More info</button>
+          {/* // <h2 alt="test" key={item} src={item.mal_id}>{item.url}</h2> */}
         </article>
       ))}
     </div>
