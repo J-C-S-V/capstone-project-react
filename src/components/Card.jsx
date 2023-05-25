@@ -2,16 +2,19 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { fetchCards, grabItemId } from '../redux/features/cardSlice';
-// import { openModal } from '../redux/features/modalSlice';
 import '../styles/App.scss';
 
 function Card() {
-  const { card } = useSelector((store) => store.card);
+  const { card, isLoading } = useSelector((store) => store.card);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCards());
   }, [dispatch]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>
