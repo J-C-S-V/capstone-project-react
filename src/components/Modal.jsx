@@ -1,9 +1,11 @@
+// import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import '../styles/App.scss';
 
 function Modal() {
   const { cardModal } = useSelector((store) => store.card);
+  // const [search, setSearch] = useState("")
 
   return (
     <div className="modal">
