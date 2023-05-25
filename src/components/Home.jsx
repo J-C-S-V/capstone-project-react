@@ -1,12 +1,19 @@
+import { Microphone, Gear } from '../assets/icons';
 import Card from './Card';
-import '../styles/App.scss';
+import Logo from '../assets/logo.png';
+import '../styles/Home.scss';
 
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
+    <>
+      <div className="home">
+        <img className="home__logo" src={Logo} alt="logo" />
+        <h1 className="home__h1">Series and movies</h1>
+        <Microphone />
+        <Gear />
+      </div>
       <Card />
-    </div>
+    </>
   );
 }
 
