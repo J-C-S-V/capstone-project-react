@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchCards } from '../redux/features/cardSlice';
+// import { NavLink } from 'react-router-dom';
+import { fetchCards, grabItemId } from '../redux/features/cardSlice';
 import '../styles/App.scss';
 
 function Card() {
@@ -14,7 +15,7 @@ function Card() {
   return (
     <div>
       {card.map((item) => (
-        <article key={item}>
+        <article key={item.mal_id}>
           <header>
             {item.title_english}
           </header>
@@ -39,11 +40,10 @@ function Card() {
             {' '}
             {item.score}
           </p>
-          <button type="button" className="button">More info</button>
+          <button onClick={() => dispatch(grabItemId(item.mal_id))} type="button" className="button">More info</button>
         </article>
       ))}
     </div>
-    // <div>{card}</div>
   );
 }
 
