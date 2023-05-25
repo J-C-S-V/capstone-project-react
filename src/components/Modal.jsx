@@ -1,6 +1,7 @@
 // import { useSelector, useDispatch } from 'react-redux';
 // import { useEffect } from 'react';
 // import { fetchCards } from '../redux/features/cardSlice';
+import { NavLink } from 'react-router-dom';
 import '../styles/App.scss';
 
 function Modal() {
@@ -13,8 +14,9 @@ function Modal() {
   // }, [dispatch]);
 
   return (
-    <div>
+    <div className="modal">
       <h1>This is the modal lol</h1>
+      <NavLink to="/">return</NavLink>
     </div>
     // <div>
     //   {card.map((item) => (

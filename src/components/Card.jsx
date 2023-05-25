@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { fetchCards, grabItemId } from '../redux/features/cardSlice';
+// import { openModal } from '../redux/features/modalSlice';
 import '../styles/App.scss';
 
 function Card() {
@@ -16,31 +17,37 @@ function Card() {
     <div>
       {card.map((item) => (
         <article key={item.mal_id}>
-          <header>
-            {item.title_english}
-          </header>
-          <img height={400} width={300} alt="test" src={item.images.webp.image_url} />
+          <header>{item.title_english}</header>
+          <img
+            height={400}
+            width={300}
+            alt="test"
+            src={item.images.webp.image_url}
+          />
           <p>
             Duration:
-            {' '}
             {item.duration}
           </p>
           <p>
             Type:
-            {' '}
             {item.type}
           </p>
           <p>
             Episodes:
-            {' '}
             {item.episodes}
           </p>
           <p>
             Score:
-            {' '}
             {item.score}
           </p>
-          <button onClick={() => dispatch(grabItemId(item.mal_id))} type="button" className="button">More info</button>
+          <NavLink
+            onClick={() => { dispatch(grabItemId(item.mal_id)); }}
+            type="button"
+            className="button"
+            to="/modal"
+          >
+            More info
+          </NavLink>
         </article>
       ))}
     </div>
