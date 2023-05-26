@@ -7,7 +7,6 @@ export const fetchCards = createAsyncThunk(
   async () => {
     const response = await fetch(`${url}`);
     const data = await response.json();
-    // console.log('data', data.data);
     return data.data;
   },
 );
@@ -23,7 +22,6 @@ const cardsSlice = createSlice({
   initialState,
   reducers: {
     grabItemId: (state, action) => {
-      // console.log('grabItemId', action.payload);
       const cardItem = state.card.find((item) => item.mal_id === action.payload);
       state.cardModal = cardItem;
     },
