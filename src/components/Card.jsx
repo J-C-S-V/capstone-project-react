@@ -23,7 +23,7 @@ function Card() {
       <input
         onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())}
         type="search"
-        placeholder="Search"
+        placeholder="Search anime..."
         className="card__search"
       />
       {card
@@ -40,7 +40,7 @@ function Card() {
               src={item.images.webp.image_url}
               className="card__img"
             />
-            <p className="card__duration card__p">
+            {/* <p className="card__duration card__p">
               Duration:
               {item.duration}
             </p>
@@ -55,7 +55,7 @@ function Card() {
             <p className="card__score ">
               Score:
               {item.score}
-            </p>
+            </p> */}
             <NavLink
               onClick={() => {
                 dispatch(grabItemId(item.mal_id));
