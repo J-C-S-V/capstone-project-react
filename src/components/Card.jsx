@@ -6,7 +6,6 @@ import '../styles/Card.scss';
 
 function Card() {
   const [search, setSearch] = useState('');
-  // console.log(search);
   const { card, isLoading } = useSelector((store) => store.card);
   const dispatch = useDispatch();
 
@@ -40,22 +39,6 @@ function Card() {
               src={item.images.webp.image_url}
               className="card__img"
             />
-            {/* <p className="card__duration card__p">
-              Duration:
-              {item.duration}
-            </p>
-            <p className="card__type card__p">
-              Type:
-              {item.type}
-            </p>
-            <p className="card__episodes card__p">
-              Episodes:
-              {item.episodes}
-            </p>
-            <p className="card__score ">
-              Score:
-              {item.score}
-            </p> */}
             <NavLink
               onClick={() => {
                 dispatch(grabItemId(item.mal_id));

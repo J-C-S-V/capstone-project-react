@@ -5,7 +5,6 @@ import '../styles/Modal.scss';
 
 function Modal() {
   const { cardModal } = useSelector((store) => store.card);
-  // const [search, setSearch] = useState("")
 
   return (
     <div className="modal">
