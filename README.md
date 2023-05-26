@@ -2,9 +2,9 @@
 
 <div align="center">
   <a href="https://unsplash.com/photos/04X1Yp9hNH8">
-    <img src="https://github.com/J-C-S-V/spacex-project/assets/109441277/67864144-6dad-4db2-9b90-ad2ca7b9e4aa" alt="logo" width="740" height="auto" /><br/>
+    <img src="https://github.com/J-C-S-V/capstone-project-react/assets/109441277/3f25befe-0413-4dc2-b440-304313f9b052" alt="logo" width="300" height="auto" /><br/>
   </a>
-  <h1><b>Space Travelers' Hub</b></h1>
+  <h1><b>Anime series and movies</b></h1>
 </div>
 
 # 📗 Table of Contents
@@ -30,9 +30,9 @@
 
 # 📖 About the project <a name="about-project"></a>
 
-This project is a web application that focuses on rocket reservations and mission management. It allows users to reserve rockets for upcoming missions and provides a comprehensive overview of mission details. The application is built using React.js and Redux for state management.
+This project is a web application that focuses on anime stats. It allows users to reserve filter a anime they like and they'll have the option to click for more details and get a comprehensive overview of anime details. The application is built using React.js and Redux for state management.
 
-In order to provide up-to-date and relevant information to the users, this SPA integrates with the SpaceX API. By leveraging the SpaceX API, the application can fetch data related to space missions, rocket launches, astronauts, and more. This integration allows users to explore the latest launches, upcoming missions, and historical information about SpaceX's activities directly within the application.
+In order to provide up-to-date and relevant information to the users, this SPA integrates with the jikan API. By leveraging the jikan API, the application can fetch data related to anime series and movies. This integration allows users to explore the top animes, year of lanch, and historical information about the anime directly within the application.
 
 This project is a Single Page Application (SPA), which utilizes modern web technologies to provide a seamless and fluid user experience. By leveraging client-side rendering, the application eliminates the need for full page reloads, enabling users to navigate within the page smoothly.
 
@@ -55,7 +55,7 @@ This project is a Single Page Application (SPA), which utilizes modern web techn
     <li><a href="#">HTML5</a></li>
   </ul>
   <ul>
-    <li><a href="#">CSS3</a></li>
+    <li><a href="#">SASS</a></li>
   </ul>
   <ul>
     <li><a href="#">Git</a></li>
@@ -95,7 +95,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-`git clone` https://github.com/J-C-S-V/spacex-project
+`git clone` https://github.com/J-C-S-V/capstone-project-react
 
 ### Install
 
@@ -127,9 +127,9 @@ You can deploy this project using:
 
 ## 🔭 Future features <a name="future-features"></a>
 
-- [ ] **[Dragons section]**
-- [ ] **[Payment methods]**
 - [ ] **[Login section]**
+- [ ] **[Payment methods]**
+- [ ] **[Video section]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,7 +149,7 @@ If you get inspired by this project you can give us a star 🙌
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Space X for the API data 🚀
+I would like to thank Nelson Sakwa on Behance for the design and jikan for the API data 🚀
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
