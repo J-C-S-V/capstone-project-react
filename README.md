@@ -14,6 +14,7 @@
     - [Tech stack](#tech-stack)
     - [Key features](#key-features)
   - [🚀 Live demo](#live-demo)
+  - [🎥 Video demo](#video-demo)
 - [💻 Getting started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -78,8 +79,13 @@ This project is a Single Page Application (SPA), which utilizes modern web techn
 
 ## 🚀 Live demo <a name="live-demo"></a>
 
-Under construction.
-<!-- - [Live Demo Link](https://j-c-s-v.github.io/webpack-to-do-list/) -->
+- [Live Demo Link](https://monumental-genie-e44af9.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎥 Video demo <a name="video-demo"></a>
+
+- [Video Demo Link](https://www.loom.com/share/b297e3f7757042429de02bca9bf0f570)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
