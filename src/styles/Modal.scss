@@ -1,0 +1,69 @@
+@import 'global-styles';
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: map-get($colors, red-100);
+  height: 100vh;
+}
+
+.modal__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal__header {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.modal__section-one,
+.modal__section-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: map-get($colors, red-40);
+}
+
+.modal__section-one {
+  margin-bottom: 0.5rem;
+}
+
+.card__p {
+  margin: 0;
+}
+
+.modal__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid white;
+  flex: 1;
+  padding: 0.3rem;
+}
+
+.modal__card-header {
+  font-weight: 800;
+}
+
+.modal__return {
+  margin: 1.5rem;
+  color: map-get($colors, white-20);
+}
+
+.modal__return:hover {
+  transform: scale(1.5);
+}
+
+.modal__return:active {
+  transform: scale(1.5);
+}
+
+.modal__back-arrow {
+  height: 2rem;
+  width: 2rem;
+}

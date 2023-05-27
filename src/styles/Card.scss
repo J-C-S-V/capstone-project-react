@@ -1,0 +1,55 @@
+@import 'global-styles';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: map-get($colors, red-80);
+  gap: 2rem;
+}
+
+.card__search {
+  align-self: center;
+  width: 80%;
+  padding: 0.6rem;
+}
+
+.card__article {
+  border: 1px solid map-get($colors, white-20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  padding: 2rem 0;
+  background-color: map-get($colors, red-40);
+  gap: 2rem;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.75);
+}
+
+.card__header {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.card__p {
+  margin: 0;
+}
+
+.card__button {
+  text-decoration: none;
+  background-color: map-get($colors, red-100);
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: map-get($colors, white-20);
+  border: 1px solid map-get($colors, red-100);
+}
+
+.card__button:hover {
+  border: 1px solid map-get($colors, white-20);
+  background-color: map-get($colors, red-60);
+}
+
+.card__button:active {
+  border: 1px solid map-get($colors, white-20);
+  background-color: map-get($colors, red-60);
+}
