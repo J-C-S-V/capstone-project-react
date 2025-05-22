@@ -1,7 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Modal from './components/Modal';
-import './styles/App.scss';
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Modal from "./components/Modal";
+import "./App.css";
 
 function App() {
   return (

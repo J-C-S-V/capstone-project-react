@@ -1,7 +1,7 @@
-import { Microphone, Gear } from '../assets/icons';
-import Card from './Card';
-import Logo from '../assets/logo.png';
-import '../styles/Home.scss';
+import { Microphone, Gear } from "../assets/icons";
+import Card from "./Card";
+import Logo from "../assets/logo.png";
+import "../App.css";
 
 function Home() {
   return (
@@ -9,8 +9,10 @@ function Home() {
       <div className="home">
         <img className="home__logo" src={Logo} alt="logo" />
         <h1 className="home__h1">Series and movies</h1>
-        <Microphone />
-        <Gear />
+        <div className="home__icons">
+          <Microphone />
+          <Gear />
+        </div>
       </div>
       <Card />
     </>

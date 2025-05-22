@@ -1,11 +1,10 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { fetchCards, grabItemId } from '../redux/features/cardSlice';
-import '../styles/Card.scss';
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { fetchCards, grabItemId } from "../redux/features/cardSlice";
 
 function Card() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const { card, isLoading } = useSelector((store) => store.card);
   const dispatch = useDispatch();
 
@@ -25,32 +24,37 @@ function Card() {
         placeholder="Search anime..."
         className="card__search"
       />
-      {card
-        .filter((item) => (search.toLowerCase() === ''
-          ? item
-          : item.title_english && item.title_english.toLowerCase().includes(search)))
-        .map((item) => (
-          <article className="card__article" key={item.mal_id}>
-            <header className="card__header">{item.title_english}</header>
-            <img
-              height={200}
-              width={150}
-              alt="test"
-              src={item.images.webp.image_url}
-              className="card__img"
-            />
-            <NavLink
-              onClick={() => {
-                dispatch(grabItemId(item.mal_id));
-              }}
-              type="button"
-              className="card__button"
-              to="/modal"
-            >
-              More info
-            </NavLink>
-          </article>
-        ))}
+      <div className="cards__container">
+        {card
+          .filter((item) =>
+            search.toLowerCase() === ""
+              ? item
+              : item.title_english &&
+                item.title_english.toLowerCase().includes(search)
+          )
+          .map((item) => (
+            <article className="card__article" key={item.mal_id}>
+              <header className="card__header">{item.title_english}</header>
+              <img
+                height={200}
+                width={150}
+                alt="test"
+                src={item.images.webp.image_url}
+                className="card__img"
+              />
+              <NavLink
+                onClick={() => {
+                  dispatch(grabItemId(item.mal_id));
+                }}
+                type="button"
+                className="card__button"
+                to="/modal"
+              >
+                More info
+              </NavLink>
+            </article>
+          ))}
+      </div>
     </div>
   );
 }

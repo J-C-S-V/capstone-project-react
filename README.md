@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://unsplash.com/photos/04X1Yp9hNH8">
-    <img src="https://github.com/J-C-S-V/capstone-project-react/assets/109441277/3f25befe-0413-4dc2-b440-304313f9b052" alt="logo" width="300" height="auto" /><br/>
+    <img src="hero.png" alt="logo" width="300" height="auto" /><br/>
   </a>
   <h1><b>Anime series and movies</b></h1>
 </div>

@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap");
+
+:root {
+  /* Color Variables */
+  --color-red-100: #ffffff;
+  --color-red-80: #e13333;
+  --color-red-60: #ff3333;
+  --color-red-40: #ff3333;
+  --color-white-20: #fefefe;
+  --color-black-80: #000000;
+
+  /* Font Variables */
+  --font-primary: "Lato", sans-serif;
+  --font-sans: "Source Sans Pro", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-white-20);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--color-red-80);
+  gap: 2rem;
+}
+
+.card__search {
+  align-self: center;
+  width: 80%;
+  padding: 0.6rem;
+}
+
+.card__article {
+  border: 1px solid var(--color-white-20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--color-red-40);
+  gap: 2rem;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.75);
+  width: min-content;
+  justify-content: space-between;
+}
+
+.card__header {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: var(--font-primary);
+  color: var(--color-white-20);
+}
+
+.card__p {
+  margin: 0;
+  color: var(--color-white-20);
+  font-family: var(--font-sans);
+}
+
+.card__button {
+  text-decoration: none;
+  background-color: var(--color-red-100);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  color: var(--color-black-80);
+  border: 1px solid var(--color-red-100);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card__button:hover,
+.card__button:active {
+  border: 1px solid var(--color-white-20);
+  background-color: var(--color-red-60);
+  color: var(--color-white-20);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some responsive design */
+@media (max-width: 768px) {
+  .card {
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .card__header {
+    font-size: 1.4rem;
+  }
+
+  .card__button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+.home {
+  display: flex;
+  background-color: var(--color-red-60);
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.3rem;
+}
+
+.home__logo {
+  width: 11rem;
+}
+
+.home__h1 {
+  font-size: 3.5rem;
+  text-shadow: 0px 16px 12px #131313;
+}
+
+.home__microphone,
+.home__gear {
+  align-self: flex-start;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-red-40);
+  height: 100vh;
+}
+
+.modal__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal__header {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.modal__section-one,
+.modal__section-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: var(--color-red-40);
+}
+
+.modal__section-one {
+  margin-bottom: 0.5rem;
+}
+
+.card__p {
+  margin: 0;
+}
+
+.modal__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid white;
+  flex: 1;
+  padding: 0.3rem;
+}
+
+.modal__card-header {
+  font-weight: 800;
+}
+
+.modal__return {
+  margin: 1.5rem;
+  color: var(--color-white-20);
+}
+
+.modal__return:hover {
+  transform: scale(1.5);
+}
+
+.modal__return:active {
+  transform: scale(1.5);
+}
+
+.modal__back-arrow {
+  height: 2rem;
+  width: 2rem;
+}
+
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.home__icons {
+  display: flex;
+  gap: 3.5rem;
+  justify-content: space-evenly;
+}
